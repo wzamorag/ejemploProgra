@@ -7,7 +7,7 @@ import java.util.Random;
  * @author williamzamora
  */
 public class Persona {
-
+    //encapsular scope(alcance)
     private String nombre;
     private int edad;
     private char sexo;
@@ -57,7 +57,7 @@ public class Persona {
     }
     
     public boolean esMayorDeEdad(int edad){
-        if(edad>=18){
+        if (edad>=18){
             return true;
         }else{
             return false;
@@ -71,10 +71,15 @@ public class Persona {
             return false;
         }
     }
+
+    public int getDui() {
+        return dui;
+    }
     
     private int generaDUI(){
-        int dui=aleatorio.nextInt(90000)+10000;
-        return dui;
+        int duiGen=aleatorio.nextInt(90000)+100000;
+//        duiGen=aleatorio.
+        return duiGen;
     }
 
     public void setNombre(String nombre) {
